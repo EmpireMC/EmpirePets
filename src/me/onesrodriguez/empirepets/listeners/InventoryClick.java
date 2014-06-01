@@ -11,7 +11,7 @@ public class InventoryClick implements Listener{
 
     @EventHandler
     public void onInventoryClick(InventoryClickEvent event){
-        if(!event.getInventory().getName().equalsIgnoreCase("§8[§6Pet§8] §ePet§lShop")){
+        if(!event.getInventory().getName().equalsIgnoreCase("§8[§6Pet§8] §ePet§lShop") | !event.getInventory().getName().equalsIgnoreCase("§8[§6Pet§8] §ePet §lChooser")){
             return;
         }
         Player player = (Player) event.getWhoClicked();
