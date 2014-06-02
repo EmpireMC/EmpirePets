@@ -23,19 +23,19 @@ public class InventoryClick implements Listener{
         }
         
         if(event.getCurrentItem() == PetShop.mooCow){
-            
+            //TODO Add token system
         }
         
         if(event.getCurrentItem() == PetShop.baaSheep){
-            
+            //TODO Add token system
         }
         
         if(event.getCurrentItem() == PetShop.oinkPig){
-            
+            //TODO Add token system
         }
         
         if(event.getCurrentItem() == PetShop.Stevie){
-            
+            //TODO Add token system
         }
     }
 }
