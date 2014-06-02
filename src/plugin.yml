@@ -1,7 +1,7 @@
 name: EmpirePets
 author: OnesRodriguez
 version: 1.0
-main: me.onesrodriguez.empirepets.Core;
+main: me.onesrodriguez.empirepets.Core
 commands:
     empirepet:
         description: Main pet command.
