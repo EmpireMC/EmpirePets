@@ -6,4 +6,10 @@ commands:
     empirepet:
         description: Main pet command.
         usage: /empirepet
+    command2:
+        description: Main pet command.
+        usage: /empirepet
+    command3:
+        description: Main pet command.
+        usage: /empirepet
         
