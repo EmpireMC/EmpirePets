@@ -1,5 +1,6 @@
 package me.onesrodriguez.empirepets.listeners;
 
+import me.onesrodriguez.empirepets.GUIChooser;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -19,9 +20,15 @@ public class PlayerInteract implements Listener{
         if(action != Action.RIGHT_CLICK_AIR || action != Action.RIGHT_CLICK_BLOCK){
             return;
         }
-        if(item.getType() != Material.SLIME_BALL){
+        if(item.getType() != Material.MAGMA_CREAM){
             return;
         }
+        if(item.getItemMeta().getDisplayName().equals("§eCustomizer!")){
+            GUIChooser.openGUI(player);
+        }
+        
+        
+        
         
         
     }

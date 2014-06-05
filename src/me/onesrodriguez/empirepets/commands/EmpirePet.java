@@ -1,6 +1,7 @@
 package me.onesrodriguez.empirepets.commands;
 
 import me.onesrodriguez.empirepets.Core;
+import me.onesrodriguez.empirepets.GUIChooser;
 import me.onesrodriguez.empirepets.PetGUI;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -17,36 +18,36 @@ public class EmpirePet implements CommandExecutor{
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String string, String[] args) {
-        if(sender instanceof Player){
+        if(!(sender instanceof Player)){
             sender.sendMessage("§4NOOOOOOOOPPPPPPPPPPPPEEEEEEEEEEE.");
         }
         Player player = (Player) sender;
         if(player.hasPermission("empirepet.member")){
-            PetGUI.openPetGUI(player);
+            GUIChooser.openGUI(player);
         }
         if(player.hasPermission("empirepet.saxon")){
-            PetGUI.openPetGUI(player);
+            GUIChooser.openGUI(player);
         }
         if(player.hasPermission("empirepet.bowman")){
-            PetGUI.openPetGUI(player);
+            GUIChooser.openGUI(player);
         }
         if(player.hasPermission("empirepet.zeus")){
-            PetGUI.openPetGUI(player);
+            GUIChooser.openGUI(player);
         }
         if(player.hasPermission("empirepet.mod")){
-            PetGUI.openPetGUI(player);
+            GUIChooser.openGUI(player);
         }
         if(player.hasPermission("empirepet.snrmod")){
-            PetGUI.openPetGUI(player);
+            GUIChooser.openGUI(player);
         }
         if(player.hasPermission("empirepet.vip")){
-            PetGUI.openPetGUI(player);
+            GUIChooser.openGUI(player);
         }
         if(player.hasPermission("empirepet.headadmin")){
-            PetGUI.openPetGUI(player);
+            GUIChooser.openGUI(player);
         }
         if(player.hasPermission("empirepet.owner")){
-            PetGUI.openPetGUI(player);
+            GUIChooser.openGUI(player);
         }
         return true;
     }
